@@ -1,0 +1,82 @@
+*{
+	padding: 0px;
+	margin: 0px;
+}
+body {
+  font-family: 'montserrat', sans-serif;
+  background-image: url('bg.jpg');
+  background-size: cover;
+  background-position: top center;
+}
+/* .container{
+	
+	box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 5px 0 rgba(0,0,0,.23);
+} */
+.error,.error h1{
+	text-align: center;color: red;
+}
+input{
+	width: 200px;
+	padding: 10px;
+}
+.search{
+	text-align: center;
+}
+
+.date_location_temp_div{
+	text-align: center;
+	display: flex;
+	flex-flow: wrap;
+	justify-content: space-around;
+}
+.date_location_temp_div .temp,.date_location_temp_div .datetime,.date_location_temp_div .location{
+	/*width: 30%;*/
+	margin: 10px;
+	/*float: left;*/
+	padding: 10px;
+	box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 5px 0 rgba(0,0,0,.23);
+}
+.weekdays .sun,
+.weekdays .mon,
+.weekdays .tue,
+.weekdays .wed,
+.weekdays .thur,
+.weekdays .fri,
+.weekdays .sat
+{
+	/*width: 30%;*/
+	/* margin: 10px; */
+	float: left;
+	padding: 10px;
+	box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 5px 0 rgba(0,0,0,.23);
+	width: 175px;
+}
+.weekdays{
+	position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 180px;
+	text-align: center;
+	display: flex;
+	flex-flow: wrap;
+}
+.date_location_temp_div {
+	height: 200px;
+	position: relative;
+	/* border: 3px solid green; */
+  }
+  
+  /* .date_location_temp_div p {
+	margin: 0;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+  } */
+
+  .datetime,.temp,.location{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+  }
